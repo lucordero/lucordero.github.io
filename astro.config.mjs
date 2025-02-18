@@ -10,5 +10,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site:'https://lucordero.dev.ar',
+  site:'https://lucascordero.dev.ar',
 });
