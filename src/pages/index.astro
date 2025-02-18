@@ -1,0 +1,28 @@
+---
+import About from "../components/About.astro";
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Social from "../components/Social.astro";
+import TimeLine from "../components/TimeLine-Experiencie/TimeLine.astro";
+
+---
+<Layout
+	title="Porfolio - Lucas Cordero"
+	description="Programador web con 2 años de experiencia, FullStack, apasionado por crear soluciones digitales eficientes y experiencias de usuario excepcionales"
+>
+	<main>
+		<SectionContainer id="home" class="pt-44">
+			<Hero/>
+			<Social />
+		</SectionContainer>
+
+		<SectionContainer id="experiencia" class="pt-32">
+			<TimeLine></TimeLine>
+		</SectionContainer>
+
+		<SectionContainer id="sobre-mi" class="pt-32">
+			<About/>
+		</SectionContainer>
+	</main>
+</Layout>

@@ -1,0 +1,65 @@
+---
+import "../styles/global.css";
+import '@fontsource-variable/noto-sans';
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+interface Props {
+	title: string;
+	description: string;
+}
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/Logo.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="overflow-x-hidden overscroll-x-none bg-yellow-50/10 dark:bg-[#0c1015] text-black dark:text-white bg-noisy-pattern">
+		<div class="relative h-full ">
+			<div
+				class="-z-50 absolute bottom-0 left-[-20%] right-0 top-[150px] md:top-[-10%] xs:size-[300px] sm:size-[500px] md:size-[1000px] rounded-full dark:bg-[radial-gradient(circle_farthest-side,rgba(6,78,59,.25),rgba(255,255,255,0))]"
+			>
+			</div><div
+				class="-z-50 absolute bottom-0 right-[10%] top-[700px] xs:size-[300px] sm:size-[500px] lg:size-[700px] rounded-full dark:bg-[radial-gradient(circle_farthest-side,rgba(30,58,138,.25),rgba(255,255,255,0))]"
+			>
+			</div>
+		</div>
+
+		<Header />
+		<slot />
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	html{
+		font-family: "Noto Sans", sans-serif, sans-serif;
+		scroll-behavior: smooth;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100vh;
+		overscroll-behavior: none;
+	}
+
+	p{
+        text-wrap: pretty;
+        padding-block: 0.5rem;
+        line-height: 1.3rem;
+		margin-bottom: 0.4rem;
+    }
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
+</style>
