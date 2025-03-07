@@ -1,0 +1,43 @@
+---
+interface Props {
+	name: string;
+	title: string;
+	description: string;
+	image: string;
+}
+
+const { name, title, description, image } = Astro.props;
+---
+
+<div
+	class="col-span-1 md:col-span-2 row-span-1 bg-card text-card-foreground rounded-xl overflow-hidden shadow-md border border-border hover:shadow-lg transition-all duration-300"
+>
+	<div class="p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+		<div class="shrink-0">
+			<img
+				src={image || "/placeholder.svg"}
+				alt={name}
+				class="w-32 h-32 rounded-full object-cover border-4 border-primary/20"
+			/>
+		</div>
+		<div class="text-center md:text-left">
+			<h2 class="text-3xl md:text-4xl font-bold">{name}</h2>
+			<p class="text-xl text-muted-foreground mt-1">{title}</p>
+			<p class="mt-4 max-w-md">{description}</p>
+			<div class="mt-6 flex gap-4 justify-center md:justify-start">
+				<a
+					href="#"
+					class="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
+				>
+					Contact Me
+				</a>
+				<a
+					href="#"
+					class="bg-secondary text-secondary-foreground px-4 py-2 rounded-md hover:bg-secondary/90 transition-colors"
+				>
+					Download CV
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

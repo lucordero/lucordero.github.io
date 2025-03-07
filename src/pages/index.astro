@@ -1,11 +1,38 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import BentoGrid from "../components/BentoGrid.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import ProfileCard from "../components/ProfileCard.astro";
+import TechnologiesCard from "../components/TechnologiesCard.astro";
+import ExperienceCard from "../components/ExperienceCard.astro";
+import ProjectsCard from "../components/ProjectsCard.astro";
+import ContactCard from "../components/ContactCard.astro";
+// Removed BlogCard import
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Lucas Cordero | Web Developer">
+	<main class="container mx-auto px-4 py-8 md:py-16 max-w-[60%]">
+		<div class="flex justify-between items-center mb-8">
+			<h1 class="text-3xl font-bold text-primary">Portfolio</h1>
+			<ThemeToggle />
+		</div>
+
+		<BentoGrid>
+			<ProfileCard
+				name="Lucas Cordero"
+				title="Full Stack Developer"
+				description="Building beautiful, responsive web applications with modern technologies."
+				image="/placeholder.svg?height=150&width=150"
+			/>
+
+			<TechnologiesCard />
+
+			<ExperienceCard />
+
+			<ProjectsCard />
+
+			<ContactCard />
+			<!-- Removed BlogCard component -->
+		</BentoGrid>
+	</main>
 </Layout>

@@ -1,0 +1,43 @@
+---
+const contactMethods = [
+	{ name: "Email", value: "john.doe@example.com", icon: "mail" },
+	{ name: "LinkedIn", value: "linkedin.com/in/johndoe", icon: "linkedin" },
+	{ name: "GitHub", value: "github.com/johndoe", icon: "github" },
+	{ name: "Twitter", value: "@johndoe", icon: "twitter" },
+];
+---
+
+<div
+	class="col-span-1 row-span-1 bg-card text-card-foreground rounded-xl overflow-hidden shadow-md border border-border hover:shadow-lg transition-all duration-300"
+>
+	<div class="p-6">
+		<h3 class="text-xl font-bold mb-4">Contact</h3>
+		<div class="space-y-3">
+			{
+				contactMethods.map((method) => (
+					<div class="flex items-center gap-3">
+						<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+							<span>
+								{method.icon === "mail"
+									? "✉️"
+									: method.icon === "linkedin"
+										? "🔗"
+										: method.icon === "github"
+											? "🐙"
+											: method.icon === "twitter"
+												? "🐦"
+												: "📱"}
+							</span>
+						</div>
+						<div>
+							<p class="text-sm text-muted-foreground">
+								{method.name}
+							</p>
+							<p class="font-medium">{method.value}</p>
+						</div>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</div>

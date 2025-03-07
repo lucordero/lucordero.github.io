@@ -1,0 +1,47 @@
+---
+const experiences = [
+	{
+		company: "Tech Innovations Inc.",
+		position: "Senior Frontend Developer",
+		period: "2021 - Present",
+		description:
+			"Led the development of responsive web applications using React and TypeScript. Implemented CI/CD pipelines and improved performance by 40%.",
+	},
+	{
+		company: "Digital Solutions Ltd.",
+		position: "Web Developer",
+		period: "2018 - 2021",
+		description:
+			"Developed and maintained multiple client websites. Worked with JavaScript, HTML, CSS, and various frontend frameworks.",
+	},
+	{
+		company: "Creative Agency",
+		position: "Junior Developer",
+		period: "2016 - 2018",
+		description:
+			"Assisted in the development of websites and web applications. Gained experience with responsive design and modern web technologies.",
+	},
+];
+---
+
+<div
+	class="col-span-1 lg:col-span-2 row-span-1 bg-card text-card-foreground rounded-xl overflow-hidden shadow-md border border-border hover:shadow-lg transition-all duration-300"
+>
+	<div class="p-6">
+		<h3 class="text-xl font-bold mb-4">Experience</h3>
+		<div class="space-y-6">
+			{
+				experiences.map((exp, index) => (
+					<div class="relative pl-6 pb-6 border-l-2 border-primary/30 last:border-0 last:pb-0">
+						<div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0" />
+						<h4 class="text-lg font-semibold">{exp.position}</h4>
+						<p class="text-muted-foreground">
+							{exp.company} | {exp.period}
+						</p>
+						<p class="mt-2">{exp.description}</p>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</div>
