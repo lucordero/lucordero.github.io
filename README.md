@@ -1,48 +1,38 @@
-# Astro Starter Kit: Basics
+# 🌐 Lucas Cordero - Full Stack Developer  
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Hola! Soy **Lucas Cordero**, un desarrollador web full stack argentino 🇦🇷 con más de **2 años de experiencia**. Actualmente, trabajo con **PHP y Symfony 5**, creando soluciones eficientes y escalables.  
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Tecnologías principales
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Backend:** PHP, Symfony  
+- **Bases de datos:** MariaDB, MySQL  
+- **Servidores:** Apache, Nginx  
+- **Frontend:** JavaScript, React, Tailwind CSS, Astro  
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 📌 Experiencia
 
-## 🚀 Project Structure
+### 🔹 Desarrollador Full Stack - Servicio Público Provincial de Defensa Penal
 
-Inside of your Astro project, you'll see the following folders and files:
+**(Jun 2023 - Actualidad)**  
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Desarrollo de un sistema para la gestión y análisis de **reportes de usuario**.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- Implementación de un sistema embebido en **Symfony 5** para la gestión de **solicitudes de licencia**, optimizando el análisis de informes en más de un 60%.
 
-## 🧞 Commands
+- Priorización de UX/UI para usuarios sin experiencia en sistemas web.
 
-All commands are run from the root of the project, from a terminal:
+- **Actualización completa de dos sistemas internos**, incluyendo:
+  - Migración de **PHP 5 a PHP 8**, mejorando rendimiento y seguridad.  
+  - Rediseño y migración de bases de datos, optimizando estructura y eficiencia.  
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🎯 Sobre mí
 
-## 👀 Want to learn more?
+Soy un apasionado por el desarrollo web y siempre estoy buscando aprender nuevas tecnologías. Me encanta resolver problemas complejos y mejorar la experiencia del usuario con soluciones intuitivas.  
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📫 Contáctame
+
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucascordero/)
+- [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](lucascordero1997@gmail.com)
+- [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucordero/)
+
+🔗 **Visita mi portafolio:** [lucascordero.dev.ar](lucascordero.dev.ar)
