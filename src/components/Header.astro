@@ -5,28 +5,29 @@ import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <header
-	class="flex justify-between items-center py-5 px-4 lg:w-[968px] lg:mx-auto gap-x-1"
+        class="flex justify-between items-center py-5 px-4 lg:w-[968px] lg:mx-auto gap-x-1"
 >
-	<a aria-label="Logo from Lucas Cordero" href="/">
-		<Logo
-			class="size-8 float-start md:size-10 lg:size-16 dark:fill-white fill-black"
-		/></a
-	>
-	<nav class="flex flex-row gap-x-2 opacity-80">
-		<a class="dark:hover:bg-white/15" href="/#experiencia">Experiencia</a>
-		<!-- <a class="dark:hover:bg-white/15" href="/#proyectos">Projectos</a> -->
-		<a class="dark:hover:bg-white/15" href="/#sobre-mi">Sobre mí</a>
-	</nav>
-	<ThemeToggle />
+    <a aria-label="Logo from Lucas Cordero" href="/">
+        <Logo
+                class="size-8 float-start md:size-10 lg:size-16 dark:fill-white fill-black"
+        />
+    </a
+    >
+    <nav class="flex flex-row gap-x-2 opacity-80">
+        <a class="dark:hover:bg-white/15" href="/#experiencia">Experiencia</a>
+        <!-- <a class="dark:hover:bg-white/15" href="/#proyectos">Projectos</a> -->
+        <a class="dark:hover:bg-white/15" href="/#sobre-mi">Sobre mí</a>
+    </nav>
+    <ThemeToggle/>
 </header>
 
 <style>
-	a {
-		padding: 0.25rem 0.5rem;
-		border-radius: 1.5rem;
-	}
+    a {
+        padding: 0.25rem 0.5rem;
+        border-radius: 1.5rem;
+    }
 
-	a:hover {
-		background-color: rgb(0 0 0 / 0.15);
-	}
+    a:hover {
+        background-color: rgb(0 0 0 / 0.15);
+    }
 </style>
